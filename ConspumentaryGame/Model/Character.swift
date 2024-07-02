@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Character {
+class Character: ObservableObject {
     var info: Info
     var attributes: [Attribute]
+    
+    init(info: Info, attributes: [Attribute]) {
+        self.info = info
+        self.attributes = attributes
+    }
     
     static let characterExample = Character(
         info:

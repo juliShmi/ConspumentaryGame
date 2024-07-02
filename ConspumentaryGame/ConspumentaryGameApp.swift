@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct ConspumentaryGameApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    @StateObject var character = Character.characterExample
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
+            MainView()
+        }.environmentObject(character)
     }
 }
