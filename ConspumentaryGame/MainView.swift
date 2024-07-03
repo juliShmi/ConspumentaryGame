@@ -13,8 +13,8 @@ struct MainView: View {
         TabView {
             PressCardView()
                 .tabItem { Label("Press Card", systemImage: "person.text.rectangle") }
-            AbilitiesView()
-                .tabItem { Label("Abilities", systemImage: "dice") }
+            AttributesView()
+                .tabItem { Label("Attrirbutes", systemImage: "dice") }
         }
     }
 }

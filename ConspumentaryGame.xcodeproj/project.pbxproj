@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB3571FC2C34570F00D5E667 /* LibreBarcode39Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB3571FB2C34570F00D5E667 /* LibreBarcode39Text.ttf */; };
+		BB3572012C359B4700D5E667 /* AttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572002C359B4700D5E667 /* AttributeView.swift */; };
+		BB3572032C359BD000D5E667 /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572022C359BD000D5E667 /* AttributesView.swift */; };
+		BB3572052C359FAE00D5E667 /* PenaltyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572042C359FAE00D5E667 /* PenaltyView.swift */; };
 		BB880B372C3301C10041FAB3 /* ConspumentaryGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B362C3301C10041FAB3 /* ConspumentaryGameApp.swift */; };
 		BB880B3B2C3301C20041FAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB880B3A2C3301C20041FAB3 /* Assets.xcassets */; };
 		BB880B3E2C3301C20041FAB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB880B3D2C3301C20041FAB3 /* Preview Assets.xcassets */; };
@@ -18,11 +21,13 @@
 		BB880B4F2C33045B0041FAB3 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B4E2C33045B0041FAB3 /* Attribute.swift */; };
 		BB880B512C3306AF0041FAB3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B502C3306AF0041FAB3 /* MainView.swift */; };
 		BB880B532C3306DB0041FAB3 /* PressCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B522C3306DB0041FAB3 /* PressCardView.swift */; };
-		BB880B552C3306FA0041FAB3 /* AbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B542C3306FA0041FAB3 /* AbilitiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB3571FB2C34570F00D5E667 /* LibreBarcode39Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LibreBarcode39Text.ttf; sourceTree = "<group>"; };
+		BB3572002C359B4700D5E667 /* AttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeView.swift; sourceTree = "<group>"; };
+		BB3572022C359BD000D5E667 /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
+		BB3572042C359FAE00D5E667 /* PenaltyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyView.swift; sourceTree = "<group>"; };
 		BB880B332C3301C10041FAB3 /* ConspumentaryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConspumentaryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB880B362C3301C10041FAB3 /* ConspumentaryGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConspumentaryGameApp.swift; sourceTree = "<group>"; };
 		BB880B3A2C3301C20041FAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,7 +39,6 @@
 		BB880B4E2C33045B0041FAB3 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		BB880B502C3306AF0041FAB3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BB880B522C3306DB0041FAB3 /* PressCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PressCardView.swift; path = ConspumentaryGame/PressCardView.swift; sourceTree = SOURCE_ROOT; };
-		BB880B542C3306FA0041FAB3 /* AbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesView.swift; sourceTree = "<group>"; };
 		BB880B5B2C344A040041FAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ConspumentaryGame/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,7 @@
 		BB880B352C3301C10041FAB3 /* ConspumentaryGame */ = {
 			isa = PBXGroup;
 			children = (
+				BB3572002C359B4700D5E667 /* AttributeView.swift */,
 				BB880B5E2C3452BD0041FAB3 /* Fonts */,
 				BB880B5B2C344A040041FAB3 /* Info.plist */,
 				BB880B492C3302690041FAB3 /* Model */,
@@ -78,7 +83,8 @@
 				BB880B3C2C3301C20041FAB3 /* Preview Content */,
 				BB880B502C3306AF0041FAB3 /* MainView.swift */,
 				BB880B522C3306DB0041FAB3 /* PressCardView.swift */,
-				BB880B542C3306FA0041FAB3 /* AbilitiesView.swift */,
+				BB3572022C359BD000D5E667 /* AttributesView.swift */,
+				BB3572042C359FAE00D5E667 /* PenaltyView.swift */,
 			);
 			path = ConspumentaryGame;
 			sourceTree = "<group>";
@@ -180,15 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3572052C359FAE00D5E667 /* PenaltyView.swift in Sources */,
 				BB880B532C3306DB0041FAB3 /* PressCardView.swift in Sources */,
-				BB880B552C3306FA0041FAB3 /* AbilitiesView.swift in Sources */,
 				BB880B432C3301C20041FAB3 /* ConspumentaryGame.xcdatamodeld in Sources */,
 				BB880B512C3306AF0041FAB3 /* MainView.swift in Sources */,
 				BB880B402C3301C20041FAB3 /* Persistence.swift in Sources */,
+				BB3572012C359B4700D5E667 /* AttributeView.swift in Sources */,
 				BB880B4B2C3302820041FAB3 /* Character.swift in Sources */,
 				BB880B4D2C33044F0041FAB3 /* Info.swift in Sources */,
 				BB880B4F2C33045B0041FAB3 /* Attribute.swift in Sources */,
 				BB880B372C3301C10041FAB3 /* ConspumentaryGameApp.swift in Sources */,
+				BB3572032C359BD000D5E667 /* AttributesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

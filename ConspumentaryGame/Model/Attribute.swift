@@ -13,4 +13,7 @@ struct Attribute: Hashable {
     var initialValue: Int
     var penalty: Int
     let description: String
+    
+    
+    static let attributeExample = Attribute(name: "BadAss", initialValue: 10, penalty: 0, description: "Badass skill")
 }
