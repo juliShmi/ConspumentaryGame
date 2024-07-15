@@ -21,9 +21,9 @@ class Character: ObservableObject {
             Info(firstName: "Buon", lastName: "Giorno", occupation: "Bodyguard", age: 33, placeOfBirth: "Rome", tvChannel: "1Channel"),
         attributes:
             [
-                Attribute(name: "BadAss", initialValue: 10, penalty: 0, description: "Badass skill"),
-                Attribute(name: "SmartAss", initialValue: 3, penalty: 0, description: "Smartass skill"),
-                Attribute(name: "EggHead", initialValue: 4, penalty: 0, description: "Egghead skill"),
+                Attribute(name: "BadAss", initialValue: 5, penalty: 2, description: "Badass skill"),
+                Attribute(name: "SmartAss", initialValue: 3, penalty: 1, description: "Smartass skill"),
+                Attribute(name: "EggHead", initialValue: 2, penalty: 0, description: "Egghead skill"),
                 Attribute(name: "Conspiracy", initialValue: 1, penalty: 0, description: "Conspiracy skill")
             ]
     )

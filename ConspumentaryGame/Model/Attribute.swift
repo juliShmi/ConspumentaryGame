@@ -15,5 +15,5 @@ struct Attribute: Hashable {
     let description: String
     
     
-    static let attributeExample = Attribute(name: "BadAss", initialValue: 10, penalty: 0, description: "Badass skill")
+    static let attributeExample = Attribute(name: "BadAss", initialValue: 5, penalty: 2, description: "Badass skill")
 }

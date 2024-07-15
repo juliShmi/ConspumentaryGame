@@ -10,26 +10,33 @@ import SwiftUI
 struct AttributeView: View {
     
     let attribute: Attribute
+    @State var showRollDiceView = false;
     
     var body: some View {
-        HStack {
-            Text(attribute.name)
-                .font(.title2)
-            Spacer()
+        NavigationStack {
             HStack {
-                PenaltyView(initialValue: attribute.initialValue, penalty: attribute.penalty)
-                Button {
-                    print("Edit button was tapped")
-                } label: {
-                    Image(systemName: "dice.fill")
-                        .padding(3)
-                        .foregroundStyle(.black)
-                        .font(.title)
+                Text(attribute.name)
+                    .font(.title2)
+                Spacer()
+                HStack {
+                    PenaltyView(initialValue: attribute.initialValue, penalty: attribute.penalty)
+                    Button {
+                        showRollDiceView.toggle()
+                    } label: {
+                        Image(systemName: "dice.fill")
+                            .padding(3)
+                            .foregroundStyle(.black)
+                            .font(.title)
+                    }.navigationDestination(isPresented: $showRollDiceView) { RollDiceView(num: attribute.initialValue-attribute.penalty)
+                    }
+                    
                 }
+                
             }
         }
     }
 }
+
 
 #Preview {
     AttributeView(attribute: Attribute.attributeExample)

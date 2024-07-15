@@ -11,6 +11,8 @@
 		BB3572012C359B4700D5E667 /* AttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572002C359B4700D5E667 /* AttributeView.swift */; };
 		BB3572032C359BD000D5E667 /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572022C359BD000D5E667 /* AttributesView.swift */; };
 		BB3572052C359FAE00D5E667 /* PenaltyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572042C359FAE00D5E667 /* PenaltyView.swift */; };
+		BB3572072C456A3400D5E667 /* RollDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3572062C456A3400D5E667 /* RollDiceView.swift */; };
+		BB35720B2C45731400D5E667 /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB35720A2C45731400D5E667 /* DiceModel.swift */; };
 		BB880B372C3301C10041FAB3 /* ConspumentaryGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB880B362C3301C10041FAB3 /* ConspumentaryGameApp.swift */; };
 		BB880B3B2C3301C20041FAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB880B3A2C3301C20041FAB3 /* Assets.xcassets */; };
 		BB880B3E2C3301C20041FAB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB880B3D2C3301C20041FAB3 /* Preview Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		BB3572002C359B4700D5E667 /* AttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeView.swift; sourceTree = "<group>"; };
 		BB3572022C359BD000D5E667 /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
 		BB3572042C359FAE00D5E667 /* PenaltyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenaltyView.swift; sourceTree = "<group>"; };
+		BB3572062C456A3400D5E667 /* RollDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceView.swift; sourceTree = "<group>"; };
+		BB35720A2C45731400D5E667 /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
 		BB880B332C3301C10041FAB3 /* ConspumentaryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConspumentaryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB880B362C3301C10041FAB3 /* ConspumentaryGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConspumentaryGameApp.swift; sourceTree = "<group>"; };
 		BB880B3A2C3301C20041FAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,8 +87,9 @@
 				BB880B3C2C3301C20041FAB3 /* Preview Content */,
 				BB880B502C3306AF0041FAB3 /* MainView.swift */,
 				BB880B522C3306DB0041FAB3 /* PressCardView.swift */,
-				BB3572022C359BD000D5E667 /* AttributesView.swift */,
 				BB3572042C359FAE00D5E667 /* PenaltyView.swift */,
+				BB3572062C456A3400D5E667 /* RollDiceView.swift */,
+				BB3572022C359BD000D5E667 /* AttributesView.swift */,
 			);
 			path = ConspumentaryGame;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				BB880B4A2C3302820041FAB3 /* Character.swift */,
 				BB880B4C2C33044F0041FAB3 /* Info.swift */,
 				BB880B4E2C33045B0041FAB3 /* Attribute.swift */,
+				BB35720A2C45731400D5E667 /* DiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				BB880B512C3306AF0041FAB3 /* MainView.swift in Sources */,
 				BB880B402C3301C20041FAB3 /* Persistence.swift in Sources */,
 				BB3572012C359B4700D5E667 /* AttributeView.swift in Sources */,
+				BB3572072C456A3400D5E667 /* RollDiceView.swift in Sources */,
+				BB35720B2C45731400D5E667 /* DiceModel.swift in Sources */,
 				BB880B4B2C3302820041FAB3 /* Character.swift in Sources */,
 				BB880B4D2C33044F0041FAB3 /* Info.swift in Sources */,
 				BB880B4F2C33045B0041FAB3 /* Attribute.swift in Sources */,
