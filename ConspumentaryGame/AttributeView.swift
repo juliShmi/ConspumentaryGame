@@ -27,7 +27,9 @@ struct AttributeView: View {
                             .padding(3)
                             .foregroundStyle(.black)
                             .font(.title)
-                    }.navigationDestination(isPresented: $showRollDiceView) { RollDiceView(num: attribute.initialValue-attribute.penalty)
+                    
+                    }.sheet(isPresented: $showRollDiceView) {
+                        RollDiceView(num: attribute.initialValue-attribute.penalty)
                     }
                     
                 }

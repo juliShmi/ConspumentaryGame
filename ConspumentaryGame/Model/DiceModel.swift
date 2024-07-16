@@ -9,6 +9,9 @@ import Foundation
 
 struct DiceModel {
     
+    // return array of tuples to define win combination
+     
+    
     
     func getDicesArray(quantity: Int) -> [String] {
         var dices: [String] = []

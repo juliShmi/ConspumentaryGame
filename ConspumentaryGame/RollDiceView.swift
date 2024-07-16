@@ -12,11 +12,16 @@ struct RollDiceView: View {
 
     
     var body: some View {
-        HStack {
-            ForEach(DiceModel().getDicesArray(quantity: num), id:\.self) { dice in
-                Image(systemName: dice)
-                    .font(.title)
-            }.padding()
+        VStack {
+            Text("Checking ...").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .padding(.top)
+            Spacer()
+            HStack {
+                ForEach(DiceModel().getDicesArray(quantity: num), id:\.self) { dice in
+                    SingleDiceView(diceSystemImage: dice)
+                }.padding()
+            }
+            Spacer()
         }
     }
 }
